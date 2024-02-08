@@ -1,21 +1,51 @@
 body {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../../public/Background.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
-.header {
+.content {
   height: 300px;
   width: 500px;
-  border: 1px black solid;
   display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  align-items: center;
+  background-color: whitesmoke;
+  opacity: 0.90;
+  padding: 2%;
+  
 }
-.header input {
-  height: 20px;
-  width: 50px;
+
+
+
+.content td input{
+  width: 80px;
+  text-align: center;
+} 
+
+.content button {
+  width: 70%;
 }
-.header button {
-  height: 20px;
-  width: 50px;
-}/*# sourceMappingURL=style.css.map */
+
+
+
+/* 隱藏input type number小箭頭 */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*# sourceMappingURL=style.css.map */
